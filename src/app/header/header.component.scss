@@ -1,0 +1,126 @@
+.bg-color{
+    background-color: #273f78
+  }
+  .gov-india
+  {
+    text-align: right;
+  }
+  .common-left {
+    margin-left: 25px;
+}
+.common-left ul li {
+    float: left;
+    line-height: 0%;
+    font-size: 65%;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 45px;
+    padding-top: 6px;
+    padding-right: 8px;
+}
+
+.link-dark-color{
+    font-weight: 700;
+    color: #3e3f4bba !important;
+}
+.graph-border{
+    width: 100%;
+    height: 427px;
+  
+  }
+.common-left ul li.ministry {
+    padding-left: 8px;
+    border-left: 1px solid #eeeeee;
+}
+.vertical-line{
+    display: inline-block;
+    border-left: 1px solid #b1afaf;
+    height: 59px;
+    margin-top: 12px;
+}
+.nav-link1 {
+    display: block;
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: xx-small;
+}
+#hr {
+    margin-top: -13px;
+    font-weight: 700;
+    color: #022e97;
+    font-size: 20px;  
+}
+#hr span {
+    width: 448px;
+    border-bottom: 1px solid #959292;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.bg-img{
+    background-color: #e9e9ea;
+padding: 0px 12px;
+margin-bottom: 2px;
+border-radius: 15px;
+}
+.bg-logo {
+    background-image:url("http://localhost:4200/assets/imgs/background/dashboard-background.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #a7abaeab;
+    background-blend-mode: multiply;
+    opacity: .2;
+    top: 0;
+}
+.dropdown-menu {
+	min-width: 200px;
+    --bs-dropdown-link-color: white;
+    background-color: #162d64;
+    color:white;
+    font-size: 15px;
+}
+.dropdown-menu li{
+    border-bottom: 1px solid white;
+    color:white;
+ }
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+    color:white;
+}
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+    text-decoration: none;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+ul li:last-child { 
+    border:none; 
+  }
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: white;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #f5f5f5;
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+

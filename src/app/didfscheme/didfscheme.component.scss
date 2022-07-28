@@ -1,0 +1,244 @@
+.bg-color{
+    background-color: #273f78
+  }
+  .gov-india
+  {
+    text-align: right;
+  }
+  .common-left {
+    margin-left: 25px;
+}
+.common-left ul li {
+    float: left;
+    line-height: 0%;
+    font-size: 65%;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 45px;
+    padding-top: 6px;
+    padding-right: 8px;
+}
+
+.link-dark-color{
+    font-weight: 700;
+    color: #676867ba !important;
+}
+.graph-border{
+    width: 100%;
+    height: 244px;
+  
+  }
+.common-left ul li.ministry {
+    padding-left: 8px;
+    border-left: 1px solid #eeeeee;
+}
+.vertical-line{
+    display: inline-block;
+    border-left: 1px solid #b1afaf;
+    height: 59px;
+    margin-top: 12px;
+}
+.nav-link1 {
+    display: block;
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: xx-small;
+}
+#hr {
+    margin-top: -13px;
+    font-weight: 700;
+    color: #005588;
+    font-size: 20px;  
+}
+#hr span {
+    width: 448px;
+    border-bottom: 1px solid #959292;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.row{margin-left:-11px;margin-right:-12px; }
+.col-sm-6,.col-sm-12,.col{padding-left:5px;padding-right:5px;}
+.total-animal-count{
+    background-color: #23396c;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 107px;
+    height: 31px;
+    color: white;
+    padding: 2px 19px;
+    text-align: center;
+}
+.target-animal-count{
+    background-color: #748ec9f7;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 107px;
+    height: 31px;
+    color: white;
+    padding: 2px 19px;
+    text-align: center;
+}
+.total-animal-vacinated{
+    background-color: #3dbb56;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 107px;
+    height: 31px;
+    color: white;
+    padding: 2px 19px;
+    text-align: center;
+}
+.total-livestock-count-blue{
+    border: solid 1px #23396c;
+    border-radius: 2px solid;
+    border-radius: 17px;
+   // width: 109px;
+    height: 31px;
+    color: black;
+    padding: 2px ;
+    text-align: center;
+}
+.total-livestock-count-green{
+    border: solid 1px #3dbb56;
+    border-radius: 2px solid;
+    border-radius: 17px;
+   // width: 109px;
+    height: 31px;
+    color: black;
+    padding: 2px ;
+    text-align: center;
+}
+.box-heading{
+    font-weight: 700;
+    color: #005588;
+    margin-top: -7px;
+    margin-left: -8px;
+}
+.top-five-box-heading{
+    font-weight: 600;
+    margin-top: -12px;
+    margin-left: 5px;
+}
+
+.heding-middle {
+    left: 50%;
+    width: 36.2em;
+    margin-top: -31.9em;
+    /* text-align: center; */
+    transform: translate(-50%, -50%);
+    position: relative;
+  
+  }
+  .heding-middle-two {
+    left: 50%;
+    width: 36.2em;
+    transform: translate(-50%, -50%);
+    position: relative;
+    /* padding-top: 17px; */
+    margin-top: -326px;
+  
+  }
+  .heding-middle-three {
+    left: 50%;
+    width: 36.2em;
+    transform: translate(-50%, -50%);
+    position: relative;
+    /* padding-top: 17px; */
+    margin-top: 13px;
+  
+  }
+  .top-five-states{
+    // border: solid 1px #3dbb56;
+    // border-radius: 2px solid;
+   //  border-radius: 17px;
+    //  width: 109px;
+    //  height: 31px;
+    //  color: white;
+    //  padding: 2px 19px;
+     text-align: center;
+   }
+   .card-text-one{
+    text-align: center;
+     font-size: 11px;
+   }
+.state-name-left{
+    padding: 0px 20px;
+}
+
+.state-name-right{
+    padding: 0px 12px;
+}
+.icon-box {
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #eee, 0 3px 3px #999;
+}
+.bg-logo {
+    background-image:url("http://localhost:4200/assets/imgs/background/dashboard-background.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #a7abaeab;
+    background-blend-mode: multiply;
+    opacity: .2;
+    top: 0;
+}
+.bg-img{
+    background-color: #e9e9ea;
+padding: 0px 12px;
+margin-bottom: 2px;
+border-radius: 15px;
+}
+.heding-middle-one {
+    left: 50%;
+    width: 36.2em;
+    transform: translate(-50%, -50%);
+    position: relative;
+    /* padding-top: 17px; */
+    margin-top: -103px;
+  }
+  .box-heading-one{
+    color: #005588;
+    font-weight: 800;
+    padding: 0px 27px;
+    margin-top: 5px;
+  }
+  .box-heading-two{
+    color: #005588;
+    font-weight: 800;
+    margin-top: 5px;
+  }
+  .heding-middle-text {
+    left: 50%;
+    width: 30em;
+    margin-top: 25px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-weight: 700;
+    color: #005588;
+    font-size: 23px;  
+  }
+  .total-livestock-count-blue-nlm{
+    border: solid 1px #3157af;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 129px;
+    height: 31px;
+    color: white;
+    padding: 0px 19px;
+    text-align: center;
+    margin-left: -35px;
+
+  }
+  
+  

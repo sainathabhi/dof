@@ -1,0 +1,360 @@
+<app-header></app-header>
+
+      <div class="container" style="max-width: 1205px;">
+       
+        <div class="row" >
+          <div class="col-sm-6">
+            <p style=" font-weight: 700;font-size: 16px; margin-bottom: 2px;">State-wise Information for Livestock Health & Disease Control Programme</p> 
+            <p-dropdown [options]="districtsNames" [(ngModel)]="selectedCity12" (onChange)="OnChangeDistrict($event)" autoWidth="false" [style]="{'width':'100%', 'border-radius': '1px'}"  [filter]="true" filterBy="name"
+            [showClear]="false" placeholder="Please Select Districts" styleClass="my-dropdown">
+            <ng-template pTemplate="selectedItem">
+              <div class="country-item country-item-value" *ngIf="selectedCity12">
+                <div>{{selectedCity12.name}}</div>
+              </div>
+            </ng-template>
+            <ng-template let-usertype pTemplate="item">
+              <div class="country-item">
+                <div>{{usertype.name}}</div>
+              </div>
+            </ng-template>
+          </p-dropdown>   
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="background-color: #005588; color: white; border-radius: 10px;"  >
+                <div class="card-header border-bottom bg-transparent" style="font-weight: 700;">
+                    TOP 5 PERFORMING DISTRICTS (BRUCELLOSIS + FMD)
+                  </div>
+              <div class="card-body" style="text-align: center;  min-height: 235px;">
+           
+                <!-- <div class="container"> -->
+
+
+                    <div class="row">
+                 
+                        <div class="col-sm-3" style="border-right: 1px solid; width: 117px;">
+                          <p  class="top-five-box-font-heading">{{topFirstPerfomanceDistrict}}</p>      
+                         
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p class="top-five-box-font-heading"> {{topSecondPerfomanceDistrict}}</p>      
+                            <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                          
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p  class="top-five-box-font-heading"> {{topThirdPerfomanceDistrict}}</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                        
+                      </div>
+                      <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p  class="top-five-box-font-heading"> {{topFourthPerfomanceDistrict}}</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                       
+                      </div>
+                      <div class="col-sm-3 text-right" style="width: 113px;" >
+                          <p  class="top-five-box-font-heading"> {{topFifthPerfomanceDistrict}}</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                      
+                      </div>
+                      </div>
+
+                      <div class="row">
+                 
+                        <div class="col-sm-3" style="border-right: 1px solid; width: 117px;">
+                          <p class="card-text-one">Animals Vaccinated</p>      
+                          <h5>{{topFirstPerformingDistrictAnimalCoverd}}</h5>
+                               
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p class="card-text-one">Animals Vaccinated</p>      
+                          <h5>{{topSecondPerformingDistrictAnimalCoverd}}</h5>
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p class="card-text-one">Animals Vaccinated</p>      
+                          <h5>{{this.topThirdPerformingDistrictAnimalCoverd}}</h5>
+                      </div>
+                      <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p class="card-text-one">Animals Vaccinated</p>      
+                          <h5>{{topFourthPerformingDistrictAnimalCoverd}}</h5>
+                      </div>
+                      <div class="col-sm-3 text-right" style="width: 113px;" >
+                          <p class="card-text-one">Animals Vaccinated</p>      
+                          <h5>{{topFifthPerformingDistrictAnimalCoverd}}</h5>
+                      </div>
+                      </div>
+
+                <div class="row">
+                 
+                  <div class="col-sm-3" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Doses Administered </p>      
+                    <h5>{{topFirstPerformingDistrictVaccinationDone}}</h5>
+                         
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Doses Administered</p>      
+                    <h5>{{topSecondPerformingDistrictVaccinationDone}} </h5>
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Doses Administered</p>      
+                    <h5>{{topThirdPerformingDistrictVaccinationDone}} </h5>
+                </div>
+                <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Doses Administered</p>      
+                    <h5> {{topFourthPerformingDistrictVaccinationDone}}</h5>
+                </div>
+                <div class="col-sm-3 text-right" style="width: 113px;" >
+                    <p class="card-text-one">Doses Administered</p>      
+                    <h5>{{topFifthPerformingDistrictVaccinationDone}} </h5>
+                </div>
+                </div>
+
+
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="heding-middle">
+            <div class="row">
+           
+          
+              <div class="col">
+                <div class="card" style="border-radius: 10px;">
+                  <div class="card-body">
+                   <p class="box-heading">SUCCESS STORIES</p>
+                                           
+                    <!-- <div class="container"> -->
+                        <div class="row">
+                          <div class="col-sm-12">
+                                   
+        <owl-carousel-o [options]="customOptions">
+   
+            <ng-container *ngFor="let slide of slides">
+
+              <ng-template carouselSlide [id]="slide.id">
+                <div class="col">
+                   <div class="card" style="
+                   border: 0px;
+               " >
+                  
+                     <div class="card-body" >
+                        
+                         <!-- <div class="container"> -->
+                         <div class="row">
+                          
+                           <div class="col-sm-4">
+                            
+                              <div  class="icon-box">
+                                <span  class="registrations-today-icon"><img  src="/assets/imgs/background/2.png" style="height: 87px;" alt=""></span></div>
+                            
+                           </div>
+                           <div class="col-sm-8 text-right">
+                            <span class="box-heading-two"> RAJENDRA PRASAD</span>
+                             <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+                           </div>
+                         </div>
+                         <!-- </div> -->
+                       </div>               
+        </div>
+      </div>
+    </ng-template>
+</ng-container>
+   
+</owl-carousel-o>
+                          </div>
+                          
+                          </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+        </div>
+
+     
+            <div class="row" style="
+            margin-top: -450px;;
+        ">
+              <div class="col-sm-6">
+                <div class="card" style="border-radius: 10px;">
+                  <div class="card-body">
+                   <p class="box-heading"> FMD (Foot and Mouth Disease) </p>
+                    <!-- <div class="container"> -->
+                        <div class="row" style="text-align: center;">
+                            <div class="col-sm-6">
+                                <p class="card-text-one">Animals Vaccinated</p>      
+                               
+                                <h5 class="card-title mt-3 total-livestock-count-blue"> {{totalStateAnimalCoverdInFmd}}</h5>
+                              </div>
+                              <div class="col-sm-6 text-right">
+                                <p class="card-text-one">Doses Administered</p>      
+                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                  <h5 class="card-title mt-3 total-livestock-count-green"> {{totalStatevaccinationDoneInFmd}}</h5>
+                              </div>
+                              <!-- <div class="col-sm-3 text-right">
+                                <p class="card-text-one"> Cattles Vaccinated</p>    
+                              
+                                <h5 class="card-title mt-3 total-livestock-count-green"> {{totalStateCatleVaccinated}}</h5>
+                            </div> -->
+                            <!-- <div class="col-sm-3 text-right">
+                                <p class="card-text-one"> Buffaloes Vaccinated</p>    
+                              
+                                <h5 class="card-title mt-3 total-livestock-count-green"> {{totalStateBuffeloVaccinated}}</h5>
+                            </div> -->
+                          </div>
+                  </div>
+                </div>
+              </div>
+          
+              </div>
+
+              <div class="row mt-1" >
+                <div class="col-sm-6">
+                  <div class="" style="border-radius: 10px;" >
+                   
+                    <div class=""  >
+                        <div class="row" style="
+                        padding: 7px;
+                    ">
+                        <div class="col">
+                            <div class="card" style="border-radius: 10px;" >
+                              <div class="card-body mt-1">
+                               <p class="box-heading"> BRUCELLOSIS</p>
+                                <!-- <div class="container"> -->
+                                <div class="row" style="text-align: center;">
+                                 
+                                  <!-- <div class="col">
+                                    <p class="card-text-one"> Animals Vaccinated</p>  
+                                    <h5 class="card-title mt-3 total-livestock-count-blue"> {{totalStateAnimalCoverdInBrucellosis}}</h5>
+                                  </div> -->
+                                  <div class="col text-right">
+                                    <p class="card-text-one"> Doses Administered</p> 
+                                      <h5 class="card-title mt-3 total-livestock-count-green"> {{totalStatevaccinationDoneInBrucellosis}}</h5>
+                                  </div>
+                                </div>
+                                <!-- </div> -->
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col">
+                            <div class="card" style="border-radius: 10px;">
+                              <div class="card-body mt-1">
+                               <p class="box-heading">PPR (Peste Des Petits Ruminants)</p>
+                                <!-- <div class="container"> -->
+                                    <div class="row"  style="text-align: center;">
+                                        <div class="col">
+                                            <p class="card-text-one">Animals Vaccinated</p>  
+                                          <h5 class="card-title mt-3 total-livestock-count-blue"> NA</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <p class="card-text-one">Doses Administered</p> 
+                                            <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                            <h5 class="card-title mt-3 total-livestock-count-green"> NA</h5>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+      
+                        <div class="row mt-1" >
+                            <div class="col-sm-6">
+                              <div class="" style="border-radius: 10px;" >
+                               
+                                <div class=""  >
+                                    <div class="row" style="
+                                    padding: 7px; margin-top: -6px;;
+                                ">
+                                    <div class="col">
+                                        <div class="card" style="border-radius: 10px;" >
+                                          <div class="card-body mt-1">
+                                           <p class="box-heading"> CSF (Classical Swine Fever)</p>
+                                            <!-- <div class="container"> -->
+                                            <div class="row"  style="text-align: center;">
+                                             
+                                              <div class="col">
+                                                <p class="card-text-one">Animals Vaccinated</p>  
+                                                <h5 class="card-title mt-3 total-livestock-count-blue"> NA</h5>
+                                              </div>
+                                              <div class="col text-right">
+                                                <p class="card-text-one">Doses Administered</p> 
+                                                 
+                                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                  <h5 class="card-title mt-3 total-livestock-count-green"> NA</h5>
+                                              </div>
+                                            </div>
+                                            <!-- </div> -->
+                                          </div>
+                                        </div>
+                                      </div>
+            
+            
+                                      <div class="col">
+                                        <div class="card" style="border-radius: 10px;">
+                                          <div class="card-body mt-1">
+                                           <p class="box-heading">MVU (Mobile Veterinary Unit)</p>
+                                            <!-- <div class="container"> -->
+                                                <div class="row"  style="text-align: center;">
+                                                    <div class="col">
+                                                        <p class="card-text-one">Sanctioned MVUs</p>  
+                                                      <h5 class="card-title mt-3 total-livestock-count-blue">{{mvusSanctioned}}</h5>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <p class="card-text-one">Operational MVUs</p> 
+                                                        <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                        <h5 class="card-title mt-3 total-livestock-count-green">{{mvusOperational}}</h5>
+                                                    </div>
+                                                  </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+          <!-- <div class="heding-middle-one">STATE WISE LIVESTOCK VACCINATED DATA</div> -->
+          <!-- <circle-progress [percent]="statePercent" [radius]="60"  [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+  [outerStrokeColor]="'#3777BE'" [innerStrokeColor]="'#7f9fc1'" [animation]="true" [animationDuration]="300" style="
+  width: 20px; margin-left: 75%;"
+></circle-progress> -->
+<div class="row ">
+                       
+  <div class="col-sm-8" style="
+  padding-left: 243px;
+  padding-top: -8px;
+  margin-top: -25px;
+">
+    <google-chart [data]="geoChart" (chartSelect)='select($event)'  *ngIf=mapReady></google-chart>
+    
+  </div>
+  <div class="col-sm-4">
+    <div echarts class="demo-chart" [ngClass]="{'graph-border' : typeOfVacinationChart}"
+[options]="typeOfVacinationChart"></div>
+    
+  </div>
+ 
+</div>
+ 
+</div>
+
+
+
+   
+
+
+         
+
+      

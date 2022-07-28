@@ -28,9 +28,16 @@
               "src/assets"
             ],
             "styles": [
+			"node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+            "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
+			 "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+			"node_modules/jquery/dist/jquery.min.js",
+			]
           },
           "configurations": {
             "production": {
@@ -103,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6b69574b-04a4-4bb2-bd99-c8b6a2c0e9aa"
   }
 }

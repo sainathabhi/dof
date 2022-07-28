@@ -1,0 +1,309 @@
+.bg-color{
+    background-color: #0a1d4a
+  }
+  .gov-india
+  {
+    text-align: right;
+  }
+  .common-left {
+    margin-left: 25px;
+}
+.common-left ul li {
+    float: left;
+    line-height: 0%;
+    font-size: 65%;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 45px;
+    padding-top: 6px;
+    padding-right: 8px;
+}
+
+.link-dark-color{
+    font-weight: 700;
+    color: #3e3f4bba !important;
+}
+.graph-border{
+    width: 100%;
+    height: 244px;
+  
+  }
+.common-left ul li.ministry {
+    padding-left: 8px;
+    border-left: 1px solid #eeeeee;
+}
+.vertical-line{
+    display: inline-block;
+    border-left: 1px solid #b1afaf;
+    height: 59px;
+    margin-top: 12px;
+}
+.nav-link1 {
+    display: block;
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: xx-small;
+}
+#hr {
+    margin-top: -13px;
+    font-weight: 700;
+    color: #005588;
+    font-size: 20px;  
+}
+#hr span {
+    width: 448px;
+    border-bottom: 1px solid #959292;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.row{margin-left:-11px;margin-right:-12px; }
+.col-sm-6,.col-sm-12,.col{padding-left:5px;padding-right:5px;}
+.total-animal-count{
+    background-color: #23396c;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 107px;
+    height: 31px;
+    color: white;
+    padding: 2px 19px;
+    text-align: center;
+}
+.target-animal-count{
+    background-color: #748ec9f7;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 107px;
+    height: 31px;
+    color: white;
+    padding: 2px 19px;
+    text-align: center;
+}
+.total-animal-vacinated{
+    background-color: #3dbb56;
+    border-radius: 2px solid;
+    border-radius: 17px;
+    width: 107px;
+    height: 31px;
+    color: white;
+    padding: 2px 19px;
+    text-align: center;
+}
+.total-livestock-count-blue{
+    border: solid 1px #23396c;
+    border-radius: 2px solid;
+    border-radius: 17px;
+   // width: 109px;
+    height: 31px;
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+.total-livestock-count-green{
+    border: solid 1px #3dbb56;
+    border-radius: 2px solid;
+    border-radius: 17px;
+   // width: 109px;
+    height: 31px;
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+.box-heading{
+    font-weight: 700;
+    color: #005588;
+    margin-top: -7px;
+   // margin-left: -8px;
+}
+.top-five-box-font-heading{
+    font-size: 13px;
+    font-weight: bold;
+}
+.top-five-box-heading{
+    font-weight: 600;
+    margin-top: -12px;
+    margin-left: 5px;
+}
+
+.heding-middle {
+    left: 51%;
+    width: 36.2em;
+  //  margin-top: -31.9em;
+    /* text-align: center; */
+   // transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 10px;
+  
+  }
+  .card-text-one{
+    text-align: center;
+     font-size: 12px;
+   }
+  .heding-middle-two {
+    left: 50%;
+    width: 36.2em;
+   // margin-top: -31.9em;
+    /* text-align: center; */
+    transform: translate(-50%, -50%);
+    position: relative;
+    padding-top: 17px;
+  
+  }
+  .top-five-states{
+    // border: solid 1px #3dbb56;
+    // border-radius: 2px solid;
+   //  border-radius: 17px;
+    //  width: 109px;
+    //  height: 31px;
+    //  color: white;
+    //  padding: 2px 19px;
+     text-align: center;
+   }
+.state-name-left{
+    padding: 0px 20px;
+}
+
+.state-name-right{
+    padding: 0px 12px;
+}
+.icon-box {
+    background: #fff;
+    width: 105px;
+    height: 105px;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #eee, 0 3px 3px #999;
+}
+.bg-logo {
+    background-image:url("http://localhost:4200/assets/imgs/background/dashboard-background.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #a7abaeab;
+    background-blend-mode: multiply;
+    opacity: .2;
+    top: 0;
+}
+.bg-img{
+    background-color: #e9e9ea;
+padding: 0px 12px;
+margin-bottom: 2px;
+border-radius: 15px;
+}
+.heding-middle-one {
+  left: 50%;
+  margin-top: 26px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: relative;
+  font-weight: 700;
+  color: #005588;
+  font-size: 20px;
+  }
+  .box-heading-one{
+    color: #005588;
+    font-weight: 800;
+    padding: 0px 27px;
+    margin-top: 5px;
+  }
+  .box-heading-two{
+    color: #005588;
+    font-weight: 800;
+    margin-top: 5px;
+  }
+  .heding-middle-text {
+    left: 50%;
+    width: 30em;
+    margin-top: 25px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: relative;
+    font-weight: 700;
+    color: #005588;
+    font-size: 23px;  
+  }
+  .total-livestock-count-blue-nlm{
+    border: solid 1px #3489bb;
+    border-radius: 17px;
+    color: white;
+   // padding: 0px 19px;
+    text-align: center;
+    margin-left: -15px;
+    font-size: 17px;
+
+  }
+  .total-livestock-count-green-nlm-one{
+    border: solid 1px #3dbb56;
+    border-radius: 17px;
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .total-livestock-count-blue-nlm-one{
+    border: solid 1px #3157af;
+    border-radius: 17px;
+    color: #0a0a0a;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+
+  }
+  .total-livestock-count-dark-blue-nlm{
+
+    border: solid 1px #4763ad;
+    background-color: rgb(18 59 117 / 71%);
+    border-radius: 17px;
+    color: white;
+   // padding: 0px 19px;
+    text-align: center;
+    margin-left: -15px;
+    font-size: 17px;
+  
+  }
+  .dropdown-menu li{
+    border-bottom: 1px solid white;
+    color:#0a1d4a;
+ }
+ ul li:last-child { 
+    border:none; 
+  } 
+  .dropdown-toggle {
+  //  padding: 5px;
+    text-decoration: none;
+    background-color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #a7a3a3;
+    border-bottom-color: transparent;
+   // margin-bottom: -1px;
+   width:592px
+  }
+  .dropdown {
+    list-style: none;
+    display: inline-block;
+    min-width: 300px;
+  }
+  .dropdown-menu {
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    border: 1px solid black;
+    padding: 10px;
+    color:black;
+    background-color: #ffffff;
+  }
+ 
+  .ng-tns-c76-0, .my-dropdown {
+  
+    width: 100% !important;
+   
+  }
+  p-dropdown td:nth-child(1) {
+    width:700px;
+}

@@ -1,0 +1,66 @@
+.img-set{
+    width: 100%;
+}
+.col-md-6 .bg-img1{
+	background-image:url("http://localhost:4200/assets/imgs/background/After-Login_Img_left.jpg");
+    height: 100%;
+   // background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+   
+}
+.col-md-6 .bg-img2{
+	background-image:url("http://localhost:4200/assets/imgs/background/After-Login_Img_right.jpg");
+    height: 100%;
+  //  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(1px);
+   
+}
+.btn-layout{
+    padding: 6px 34px 12px 31px;
+    border-radius: 14px;
+    margin: 25px;
+}
+.text-left {
+    color: #eeeeee;
+    font-weight: bold;
+    border: 2px solid #ffffffdb;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 34%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background: #4e657794;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+  }
+  .text-right {
+    color: #eeeeee;
+    font-weight: bold;
+    border: 2px solid #ffffffdb;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+   // height: 80%;
+    transform: translate(-50%, -50%);
+    width: 34%;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    background: #4e657794;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+  }
+.row .col-md-6{
+	padding:0.1px;
+}

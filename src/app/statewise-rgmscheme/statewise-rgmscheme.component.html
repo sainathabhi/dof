@@ -1,0 +1,475 @@
+<app-header></app-header>
+
+      <div class="container" style="max-width: 1205px;">
+       
+        <div class="row" >
+           
+           
+
+<div class="col-sm-6">
+          <p style=" font-weight: 700;font-size: 19px; margin-bottom: 2px; ">State-wise Information for Rashtriya Gokul Mission (RGM)</p> 
+          <p-dropdown [options]="districtsName" [(ngModel)]="selectedCity1" (onChange)="OnChangeDistrict($event)" autoWidth="false" [style]="{'width':'100%', 'border-radius': '1px'}"  [filter]="true" filterBy="name"
+          [showClear]="false" placeholder="Please Select Districts" styleClass="my-dropdown">
+          <ng-template pTemplate="selectedItem">
+            <div class="country-item country-item-value" *ngIf="selectedCity1">
+              <div>{{selectedCity1.name}}</div>
+            </div>
+          </ng-template>
+          <ng-template let-usertype pTemplate="item">
+            <div class="country-item">
+              <div>{{usertype.name}}</div>
+            </div>
+          </ng-template>
+        </p-dropdown>
+    </div> 
+        
+
+          <div class="col-sm-6">
+            <div class="card" style="background-color: #005588; color: white; border-radius: 10px;"  >
+                <div class="card-header border-bottom bg-transparent" style="font-weight: 700;">
+                    TOP 5 PERFORMING DISTRICTS NAIP III (Total AI Done)
+                  </div>
+              <div class="card-body" style="text-align: center; min-height: 152px;">
+           
+                <!-- <div class="container"> -->
+
+
+                    <div class="row" >
+                 
+                        <div class="col-sm-3" style="border-right: 1px solid; width: 117px;">
+                          <p  class="top-five-box-font-heading">{{topFirstPerfomanceDistrict}}</p>      
+                         
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p class="top-five-box-font-heading"> {{topSecondPerfomanceDistrict}}</p>      
+                            <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                          
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                          <p  class="top-five-box-font-heading"> {{topThirdPerfomanceDistrict}}</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                        
+                      </div>
+                      <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 113px;">
+                          <p  class="top-five-box-font-heading"> {{topFourthPerfomanceDistrict}}</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                       
+                      </div>
+                      <div class="col-sm-3 text-right" style="width: 117px;" >
+                          <p  class="top-five-box-font-heading">{{topFifthPerfomanceDistrict}}</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                      
+                      </div>
+                      </div>
+
+
+
+                <div class="row">
+                 
+                  <div class="col-sm-3" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Total AI Done</p>      
+                   
+                         
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Total AI Done</p>      
+                   
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                    <p class="card-text-one">Total AI Done</p>      
+                   
+                </div>
+                <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 113px;">
+                    <p class="card-text-one">Total AI Done</p>      
+                   
+                </div>
+                <div class="col-sm-3 text-right" style="width: 117px;" >
+                    <p class="card-text-one">Total AI Done</p>      
+                   
+                </div>
+                </div>
+                <div class="row">
+                 
+                    <div class="col-sm-3" style="border-right: 1px solid; width: 117px;">
+                          
+                        <h5>{{topFirstPerformingDistrictAiDone}}</h5>
+                           
+                    </div>
+                    <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                        
+                        <h5>{{topSecondPerformingDistrictAiDone}}</h5>
+                    </div>
+                    <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 117px;">
+                     
+                        <h5>{{topThirdPerformingDistrictAiDone}}</h5>
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid; width: 113px;">
+                         
+                    <h5>{{topFourthPerformingDistrictAiDone}}</h5>
+                  </div>
+                  <div class="col-sm-3 text-right" style="width: 117px;">
+                         
+                      <h5>{{topFifthPerformingDistrictAiDone}}</h5>
+                  </div>
+                  </div>
+
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+<div class="row" style="
+margin-top: -116px;
+">
+
+
+    <div class="col-sm-6">
+        <div class="card" style="background-color: #005588; color: white; border-radius: 10px;" >
+           
+          <div class="card-body" >
+         
+            <!-- <div class="container"> -->
+            <div class="row" style="border-bottom: solid 1px #8ab9e0;">
+             
+             
+              <div class="col-sm-6" >
+                <div class="row" >
+                    <div class="col-sm-8" > 
+                        <p class="" style="font-size: 11px; ">MAITRI's Trained</p>
+                        <!-- <p class="" style="font-size: 11px; ">Farmers Benefited</p> -->
+                    </div> 
+                    <div class="col-sm-4"> 
+                        <h5 _ngcontent-tda-c67="" class="total-livestock-count-blue-nlm">  NA</h5>
+                        <!-- <h5 _ngcontent-tda-c67="" class="total-livestock-count-dark-blue-nlm"> {{totalNoOfFarmersBenefittedInNaipIII}}</h5> -->
+                    </div> 
+                 
+                </div>
+             </div>
+             <div class="col-sm-6">
+                <div class="row">
+                    <div class=" col-sm-7" > <p class="" style="font-size: 11px; ">Sex Sorted Semen Produced</p></div> 
+                    <div class=" col-sm-4">  <h5 _ngcontent-tda-c67="" class="total-livestock-count-blue-nlm">NA</h5></div> 
+                 
+                </div>
+             </div>
+
+            
+            </div>
+
+            <div class="row mt-3">
+             
+             
+                <div class="col-sm-6">
+                  <div class="row" >
+                      <div class="col-sm-8" > 
+                          <p class="" style="font-size: 11px; ">In Vitro Fertilization Pregnancies</p>
+                         
+                      </div> 
+                      <div class="col-sm-4" > 
+                          <h5 _ngcontent-tda-c67="" class="total-livestock-count-blue-nlm">NA</h5>
+                         
+                      </div> 
+                   
+                  </div>
+               </div>
+               <!-- <div class="col-sm-6" >
+                  <div class="row">
+                      <div class=" col-sm-7" > <p class="" style="font-size: 12px; ">MAITRI's trained</p></div> 
+                      <div class=" col-sm-4">  <h5 _ngcontent-tda-c67="" class="total-livestock-count-blue-nlm"> NA</h5></div> 
+                   
+                  </div>
+               </div> -->
+
+              
+              </div>
+
+            
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+</div>
+
+
+        <div class="heding-middle">
+            <div class="row">
+           
+          
+              <div class="col">
+                <div class="card" style="border-radius: 10px;">
+                  <div class="card-body">
+                   <p class="box-heading">SUCCESS STORIES</p>
+                                           
+                    <!-- <div class="container"> -->
+                        <div class="row" style="
+                        height: 278px;
+                    ">
+                          <div class="col-sm-12">
+                                   
+        <owl-carousel-o [options]="customOptions">
+   
+            <ng-container *ngFor="let slide of slides">
+
+              <ng-template carouselSlide [id]="slide.id">
+                <div class="col">
+                   <div class="card" style="
+                   border: 0px;
+               " >
+                  
+                     <div class="card-body" >
+                        
+                         <!-- <div class="container"> -->
+                         <div class="row">
+                          
+                           <div class="col-sm-4">
+                            
+                              <div  class="icon-box">
+                                <span  class="registrations-today-icon"><img  src="/assets/imgs/background/2.png" style="height: 87px;" alt=""></span></div>
+                            
+                           </div>
+                           <div class="col-sm-8 text-right">
+                            <span class="box-heading-two"> RAJENDRA PRASAD</span>
+                             <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+                           </div>
+                         </div>
+                         <!-- </div> -->
+                       </div>               
+        </div>
+      </div>
+    </ng-template>
+</ng-container>
+   
+</owl-carousel-o>
+                          </div>
+                          
+                          </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+        </div>
+
+
+<div style="margin-top: -351px;">
+        <div class="row " >
+            <div class="col-sm-6">
+              <div class="" style="border-radius: 10px;" >
+               
+                <div class=""  >
+                    <div class="row" style="
+                    padding: 7px;
+                ">
+                    <div class="col">
+                        <div class="card" style="border-radius: 10px;" >
+                          <div class="card-body">
+                            <p class="box-heading">NAIP I</p>
+                            <!-- <div class="container"> -->
+                                <div class="row mt-4">
+                 
+                                    <div class="col-sm-4">
+                                      <p class="card-text-one">AI <br> Done </p>      
+                                    </div>
+                                    <div class="col-sm-4 text-right ">
+                                      <p class="card-text-one"> Animals Covered</p>      
+                                        <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                    </div>
+                                    <div class="col-sm-4 text-right ">
+                                      <p class="card-text-one"> Farmers Benefited</p>    
+                                      <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->                    
+                                  </div>
+                                  </div>
+                                  <div class="row mt-3">
+                                    <div class="col-sm-4 ">                    
+                                      <p class="total-livestock-count-blue-nlm-one mb-0">{{totalNoOfAiDoneInNaipI}}</p>
+                                    </div>
+                                    <div class="col-sm-4 text-right">                    
+                                        <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                        <p class="total-livestock-count-green-nlm-one mb-0">{{totalNoOfAnimalCoverdDoneInNaipI}}</p>
+                                    </div>
+                                    <div class="col-sm-4 text-right">
+                                     
+                                      <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                      <p class="total-livestock-count-green-nlm-one mb-0">{{totalNoOfFarmersBenefittedInNaipI}}</p>
+                                  </div>
+                                  </div>
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col">
+                        <div class="card" style="border-radius: 10px;" >
+                          <div class="card-body">
+                           <p class="box-heading">NAIP II</p>
+                            <!-- <div class="container"> -->
+                              <div class="row mt-4">
+                             
+                                <div class="col-sm-4">
+                                  <p class="card-text-one">AI <br>Done </p>      
+                                </div>
+                                <div class="col-sm-4 text-right ">
+                                  <p class="card-text-one"> Animals Covered</p>      
+                                    <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                </div>
+                                <div class="col-sm-4 text-right ">
+                                  <p class="card-text-one"> Farmers Benefited</p>    
+                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->                    
+                              </div>
+                              </div>
+                              <div class="row mt-3">
+                                <div class="col-sm-4 ">                    
+                                  <p class="total-livestock-count-blue-nlm-one mb-0">{{totalNoOfAiDoneInNaipII}}</p>
+                                </div>
+                                <div class="col-sm-4 text-right">                    
+                                    <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                    <p class="total-livestock-count-green-nlm-one mb-0">{{totalNoOfAnimalCoverdDoneInNaipII}}</p>
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                 
+                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                  <p class="total-livestock-count-green-nlm-one mb-0">{{totalNoOfFarmersBenefittedInNaipII}}</p>
+                              </div>
+                              </div>
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+
+
+              <div class="row " style="margin-top: -8px;" >
+                <div class="col-sm-6">
+                  <div class="" style="border-radius: 10px;" >
+                   
+                    <div class=""  >
+                        <div class="row" style="
+                        padding: 7px;
+                    ">
+                                     <div class="col">
+                                        <div class="card" style="border-radius: 10px;" >
+                                          <div class="card-body">
+                                           <p class="box-heading">NAIP III</p>
+                                            <!-- <div class="container"> -->
+                                              <div class="row mt-5">
+                                             
+                                                <div class="col-sm-4">
+                                                  <p class="card-text-one">AI <br>Done </p>      
+                                                </div>
+                                                <div class="col-sm-4 text-right ">
+                                                  <p class="card-text-one"> Animals Covered</p>      
+                                                    <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                </div>
+                                                <div class="col-sm-4 text-right ">
+                                                  <p class="card-text-one"> Farmers Benefited</p>    
+                                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->                    
+                                              </div>
+                                              </div>
+                                              <div class="row ">
+                                                <div class="col-sm-4 ">                    
+                                                  <p class="total-livestock-count-blue-nlm-one mb-0">{{totalNoOfAiDoneInNaipIII}}</p>
+                                                </div>
+                                                <div class="col-sm-4 text-right">                    
+                                                    <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                    <p class="total-livestock-count-green-nlm-one mb-0">{{totalNoOfAnimalCoverdDoneInNaipIII}}</p>
+                                                </div>
+                                                <div class="col-sm-4 text-right">
+                                                 
+                                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                  <p class="total-livestock-count-green-nlm-one mb-0">{{totalNoOfFarmersBenefittedInNaipIII}}</p>
+                                              </div>
+                                              </div>
+                                            <!-- </div> -->
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                     
+                                      <div class="col-sm-6">
+                                        <div class="card" style="border-radius: 10px;" >
+                                          <div class="card-body">
+                                           <p class="box-heading">SEX SORTED SEMEN DOSES PRODUCED</p>
+                                            <!-- <div class="container"> -->
+                                              <div class="row mt-4">
+                                             
+                                                <div class="col-sm-4">
+                                                  <p class="card-text-one">Dose Produced </p>      
+                                                </div>
+                                                <div class="col-sm-4 text-right ">
+                                                  <p class="card-text-one">Doses <br> Sold</p>      
+                                                    <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                </div>
+                                                <div class="col-sm-4 text-right ">
+                                                  <p class="card-text-one">AI <br>Done</p>    
+                                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->                    
+                                              </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-sm-4 ">                    
+                                                  <p class="total-livestock-count-blue-nlm-one mb-0" >NA</p>
+                                                </div>
+                                                <div class="col-sm-4 text-right">                    
+                                                    <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                    <p class="total-livestock-count-green-nlm-one mb-0" >NA</p>
+                                                </div>
+                                                <div class="col-sm-4 text-right">
+                                                 
+                                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                 <p class="total-livestock-count-green-nlm-one mb-0" >NA</p>
+                                              </div>
+                                              </div>
+                                            <!-- </div> -->
+                                          </div>
+                                        </div>
+                                      </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+      
+
+                                </div>                     
+          <!-- <div class="heding-middle-one">STATE WISE RASHTRIYA GOKUL MISSION DATA</div> -->
+          <!-- <circle-progress [percent]="statePercent" [radius]="60"  [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+  [outerStrokeColor]="'#3777BE'" [innerStrokeColor]="'#7f9fc1'" [animation]="true" [animationDuration]="300" style="
+  width: 20px; margin-left: 75%;"
+></circle-progress> -->
+<div class="row ">
+                       
+  <div class="col-sm-8" style="
+  padding-left: 243px;
+  padding-top: -8px;
+  margin-top: -25px;
+">
+    <google-chart [data]="geoChart" (chartSelect)='select($event)'  *ngIf=mapReady></google-chart>
+    
+  </div>
+  <div class="col-sm-4">
+    <div echarts class="demo-chart" [ngClass]="{'graph-border' : typeOfVacinationChart}"
+[options]="typeOfVacinationChart"></div>
+    
+  </div>
+ 
+</div>
+ 
+</div>
+
+
+
+   
+
+
+         
+
+      

@@ -1,0 +1,362 @@
+<app-header></app-header>
+
+      <div class="container" style="max-width: 1205px;">
+       
+        <div class="row" >
+          <div class="col-sm-6">
+            <p style=" font-weight: 700;font-size: 19px; margin-bottom: 2px;">Sate-wise Information for National Livestock Mission(NLM)</p> 
+            <!-- <p-dropdown [options]="districtsName" [(ngModel)]="selectedCity1" (onChange)="OnChangeDistrict($event)" autoWidth="false" [style]="{'width':'100%', 'border-radius': '1px'}"  [filter]="true" filterBy="name"
+            [showClear]="false" placeholder="Please Select Districts" styleClass="my-dropdown">
+            <ng-template pTemplate="selectedItem">
+              <div class="country-item country-item-value" *ngIf="selectedCity1">
+                <div>{{selectedCity1.name}}</div>
+              </div>
+            </ng-template>
+            <ng-template let-usertype pTemplate="item">
+              <div class="country-item">
+                <div>{{usertype.name}}</div>
+              </div>
+            </ng-template>
+          </p-dropdown>    -->
+          </div>
+          <div class="col-sm-6">
+            <div class="card" style="background-color: #005588; color: white; border-radius: 10px;"  >
+                <div class="card-header border-bottom bg-transparent" style="font-weight: 700;">
+                    TOP 5 PERFORMINIG DISTRICTS
+                  </div>
+              <div class="card-body" style="text-align: center;">
+           
+                <!-- <div class="container"> -->
+
+
+                    <div class="row">
+                 
+                        <div class="col-sm-3" style="border-right: 1px solid;">
+                          <p  class="top-five-box-font-heading">JHARAKAN</p>      
+                         
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                          <p class="top-five-box-font-heading"> JHARAKAN</p>      
+                            <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                          
+                        </div>
+                        <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                          <p  class="top-five-box-font-heading"> JHARAKAN</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                        
+                      </div>
+                      <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                          <p  class="top-five-box-font-heading"> JHARAKAN</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                       
+                      </div>
+                      <div class="col-sm-3 text-right" >
+                          <p  class="top-five-box-font-heading">JHARAKAN</p>    
+                          <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                      
+                      </div>
+                      </div>
+
+
+
+                <div class="row">
+                 
+                  <div class="col-sm-3" style="border-right: 1px solid;">
+                    <p class="card-text-one">Vacinated</p>      
+                    <p class=" ">10 Cr</p>
+                         
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                    <p class="card-text-one">Vacinated</p>      
+                    <p class=" ">10 Cr</p>
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                    <p class="card-text-one">Vacinated</p>      
+                    <p class=" ">10 Cr</p>
+                </div>
+                <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                    <p class="card-text-one">Vacinated</p>      
+                    <p class=" ">10 Cr</p>
+                </div>
+                <div class="col-sm-3 text-right" >
+                    <p class="card-text-one">Vacinated</p>      
+                    <p class=" ">10 Cr</p>
+                </div>
+                </div>
+
+                <div class="row">
+                 
+                    <div class="col-sm-3" style="border-right: 1px solid;">
+                      <p class="card-text-one">Vacinated</p>      
+                      <p class=" ">240 Cr</p>
+                           
+                    </div>
+                    <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                      <p class="card-text-one">Vacinated</p>      
+                      <p class=" ">240 Cr</p>
+                    </div>
+                    <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                      <p class="card-text-one">Vacinated</p>      
+                      <p class=" ">240 Cr</p>
+                  </div>
+                  <div class="col-sm-2 text-right" style="border-right: 1px solid;">
+                      <p class="card-text-one">Vacinated</p>      
+                      <p class=" ">240 Cr</p>
+                  </div>
+                  <div class="col-sm-3 text-right" >
+                      <p class="card-text-one">Vacinated</p>      
+                      <p class=" ">240 Cr</p>
+                  </div>
+                  </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="heding-middle">
+            <div class="row">
+           
+          
+              <div class="col">
+                <div class="card" style="border-radius: 10px;">
+                  <div class="card-body">
+                   <p class="box-heading">SUCCESS STORIES</p>
+                                           
+                    <!-- <div class="container"> -->
+                        <div class="row">
+                          <div class="col-sm-12">
+                                   
+        <owl-carousel-o [options]="customOptions">
+   
+            <ng-container *ngFor="let slide of slides">
+
+              <ng-template carouselSlide [id]="slide.id">
+                <div class="col">
+                   <div class="card" style="
+                   border: 0px;
+               " >
+                  
+                     <div class="card-body" >
+                        
+                         <!-- <div class="container"> -->
+                         <div class="row">
+                          
+                           <div class="col-sm-4">
+                            
+                              <div  class="icon-box">
+                                <span  class="registrations-today-icon"><img  src="/assets/imgs/background/2.png" style="height: 87px;" alt=""></span></div>
+                            
+                           </div>
+                           <div class="col-sm-8 text-right">
+                            <span class="box-heading-two"> RAJENDRA PRASAD</span>
+                             <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text </p>
+                           </div>
+                         </div>
+                         <!-- </div> -->
+                       </div>               
+        </div>
+      </div>
+    </ng-template>
+</ng-container>
+   
+</owl-carousel-o>
+                          </div>
+                          
+                          </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+        </div>
+
+     
+            <div class="row" style="
+            margin-top: -450px;;
+        ">
+              <div class="col-sm-6">
+                <div class="card" style="border-radius: 10px;">
+                  <div class="card-body">
+                   <p class="box-heading"> Foot and Mouth Disease</p>
+                    <!-- <div class="container"> -->
+                        <div class="row" style="text-align: center;">
+                            <div class="col-sm-3">
+                                <p class="card-text-one">Target Animals</p>      
+                               
+                                <h5 class="card-title mt-3 total-livestock-count-blue"> 10 Cr</h5>
+                              </div>
+                              <div class="col-sm-3 text-right">
+                                <p class="card-text-one"> Vaccinated</p>      
+                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                  <h5 class="card-title mt-3 total-livestock-count-green"> 10 Cr</h5>
+                              </div>
+                              <div class="col-sm-3 text-right">
+                                <p class="card-text-one"> Cattles Vaccinated</p>    
+                                <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                <h5 class="card-title mt-3 total-livestock-count-green">10 Cr</h5>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <p class="card-text-one"> Buffaloes Vaccinated</p>    
+                                <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                <h5 class="card-title mt-3 total-livestock-count-green">10 Cr</h5>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+          
+              </div>
+
+              <div class="row mt-1" >
+                <div class="col-sm-6">
+                  <div class="" style="border-radius: 10px;" >
+                   
+                    <div class=""  >
+                        <div class="row" style="
+                        padding: 7px;
+                    ">
+                        <div class="col">
+                            <div class="card" style="border-radius: 10px;" >
+                              <div class="card-body mt-1">
+                               <p class="box-heading"> BRUCELLOSIS</p>
+                                <!-- <div class="container"> -->
+                                <div class="row" style="text-align: center;">
+                                 
+                                  <div class="col">
+                                    <p class="card-text-one"> Target Animals</p>  
+                                    <h5 class="card-title mt-3 total-livestock-count-blue"> 10 Cr</h5>
+                                  </div>
+                                  <div class="col text-right">
+                                    <p class="card-text-one">  Total Vacinate</p> 
+                                     
+                                      <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                      <h5 class="card-title mt-3 total-livestock-count-green"> 10 Cr</h5>
+                                  </div>
+                                </div>
+                                <!-- </div> -->
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col">
+                            <div class="card" style="border-radius: 10px;">
+                              <div class="card-body mt-1">
+                               <p class="box-heading"> PESTE DES PETITS RUMINANTS</p>
+                                <!-- <div class="container"> -->
+                                    <div class="row"  style="text-align: center;">
+                                        <div class="col">
+                                            <p class="card-text-one"> Target Animals</p>  
+                                          <h5 class="card-title mt-3 total-livestock-count-blue"> 24 Cr</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <p class="card-text-one">  Total Vacinate</p> 
+                                            <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                            <h5 class="card-title mt-3 total-livestock-count-green"> 10.81 Cr</h5>
+                                        </div>
+                                      </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+      
+                        <div class="row mt-1" >
+                            <div class="col-sm-6">
+                              <div class="" style="border-radius: 10px;" >
+                               
+                                <div class=""  >
+                                    <div class="row" style="
+                                    padding: 7px; margin-top: -6px;;
+                                ">
+                                    <div class="col">
+                                        <div class="card" style="border-radius: 10px;" >
+                                          <div class="card-body mt-1">
+                                           <p class="box-heading"> CLASSICAL SWINE FEVER(CSF)</p>
+                                            <!-- <div class="container"> -->
+                                            <div class="row"  style="text-align: center;">
+                                             
+                                              <div class="col">
+                                                <p class="card-text-one"> Target Animals</p>  
+                                                <h5 class="card-title mt-3 total-livestock-count-blue"> 240 Cr</h5>
+                                              </div>
+                                              <div class="col text-right">
+                                                <p class="card-text-one">  Total Vacinate</p> 
+                                                 
+                                                  <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                  <h5 class="card-title mt-3 total-livestock-count-green"> 10.81 Cr</h5>
+                                              </div>
+                                            </div>
+                                            <!-- </div> -->
+                                          </div>
+                                        </div>
+                                      </div>
+            
+            
+                                      <div class="col">
+                                        <div class="card" style="border-radius: 10px;">
+                                          <div class="card-body mt-1">
+                                           <p class="box-heading">MOBILE VETERINARY UNIT</p>
+                                            <!-- <div class="container"> -->
+                                                <div class="row"  style="text-align: center;">
+                                                    <div class="col">
+                                                        <p class="card-text-one"> Target Animals</p>  
+                                                      <h5 class="card-title mt-3 total-livestock-count-blue"> 24 Cr</h5>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <p class="card-text-one">  Total Vacinate</p> 
+                                                        <!-- <i class="fab fa-accessible-icon mt-2" style="font-size:50px; "></i> -->
+                                                        <h5 class="card-title mt-3 total-livestock-count-green"> 10.81 Cr</h5>
+                                                    </div>
+                                                  </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    
+          <div class="heding-middle-one">STATE WISE LIVESTOCK VACCINATED DATA</div>
+          <!-- <circle-progress [percent]="statePercent" [radius]="60"  [outerStrokeWidth]="15" [innerStrokeWidth]="10"
+  [outerStrokeColor]="'#3777BE'" [innerStrokeColor]="'#7f9fc1'" [animation]="true" [animationDuration]="300" style="
+  width: 20px; margin-left: 75%;"
+></circle-progress> -->
+<!-- <div class="row ">
+                       
+  <div class="col-sm-8" style="
+  padding-left: 243px;
+  padding-top: -8px;
+  margin-top: -25px;
+">
+    <google-chart [data]="geoChart" (chartSelect)='select($event)'  *ngIf=mapReady></google-chart>
+    
+  </div>
+  <div class="col-sm-4">
+    <div echarts class="demo-chart" [ngClass]="{'graph-border' : typeOfVacinationChart}"
+[options]="typeOfVacinationChart"></div>
+    
+  </div>
+ 
+</div> -->
+ 
+</div>
+
+
+
+   
+
+
+         
+
+      

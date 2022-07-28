@@ -1,0 +1,153 @@
+<main> 
+  <div class="bg-logo"></div>
+  <header class="bg-color text-white">
+      
+   <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">    
+    <div class="common-left">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li class="gov-india"> <span><a href="#" class="nav-link px-2 text-white">भारत सरकार  </a></span>
+                 <span> <a href="#" class="nav-link px-2 text-white">Goverment Of India </a></span>
+              </li>
+  
+              <li class="ministry"> <span><a href="#" class="nav-link px-2 text-white">मत्स्यपालन, पशुपालन और डेयरी मंत्रालय  </a></span>
+                  <span> <a href="#" class="nav-link px-2 text-white">MINISTRY OF FISHERIES, ANIMAL HUSBANDRY &amp; DAIRYING </a></span>
+               </li> 
+            </ul>
+          </div>
+      </div>
+      </header>
+    
+  <header class=" mb-3 border-bottom ">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><span> <img src="assets/imgs/background/OIP.png"  style="height: 85px; margin-left: 35px;" ></span> 
+                  <span> <img src="assets/imgs/background/vector.jpg"  style="height: 75px;margin-left: -15px;" ></span>
+              </li>
+              <li style="padding: 18px 0px;"> <span><a href="#" class="nav-link1 px-2 text-black">पशुपालन और डेयरी विभाग  </a></span>
+                  <span> <a href="#" class="nav-link1 px-2 text-black">DEPARTMENT OF ANIMAL HUSBANDRY AND<br> DAIRYING </a></span>
+              </li>
+             
+            
+              
+              <li>
+                    <div class="btn-group" style="padding: 13px;padding-left: 285px;">
+                      <div class="btn-group" style="padding: 12px;">
+                        <button class="btn  btn-sm dropdown-toggle link-dark-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         {{selectedStateValue}}
+                        </button>
+
+
+
+                        <ul class="dropdown-menu multi-column columns-2">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <ul class="multi-column-dropdown">
+                                <li class="dropdown-item"  (click)="selectStateValue('ALLSTATE')">STATE</li>
+                                <li class="dropdown-item"  (click)="selectStateValue('MAHARASHTRA')">ANDAMAN & NICOBAR </li>
+                                  <li class="dropdown-item"  (click)="selectStateValue('ANDHRA PRADESH')"> ANDHRA PRADESH</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('ARUNACHAL PRADESH')">ARUNACHAL PRADESH</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('ASSAM')">ASSAM</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('BIHAR')">BIHAR</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('CHANDIGARH')">CHANDIGARH</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('CHHATTISGARH')">CHHATTISGARH</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('DELHI')">DELHI</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU')">D&N HAVELI</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('GOA')">GOA</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('GUJARAT')">GUJARAT</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('HARYANA')">HARYANA</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('HIMACHAL PRADESH')">HIMACHAL PRADESH</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('JAMMU & KASHMIR')">JAMMU & KASHMIR</li>
+                                  <li class="dropdown-item" (click)="selectStateValue('JHARKHAND')">JHARKHAND</li>
+                                <li class="dropdown-item" (click)="selectStateValue('KARNATAKA')">KARNATAKA</li>
+                                <li class="dropdown-item" (click)="selectStateValue('KERALA')">KERALA</li>                            
+                                <li class="dropdown-item" (click)="selectStateValue('LADAKH')">LADAKH</li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-6">
+                              <ul class="multi-column-dropdown">
+                               
+                                <li class="dropdown-item" (click)="selectStateValue('LAKSHADWEEP')">LAKSHADWEEP</li>
+                                <li class="dropdown-item" (click)="selectStateValue('MADHYA PRADESH')">MADHYA PRADESH</li>
+                                <li class="dropdown-item" (click)="selectStateValue('MAHARASHTRA')">MAHARASHTRA</li>
+                                <li class="dropdown-item" (click)="selectStateValue('MANIPUR')">MANIPUR</li>
+                                <li class="dropdown-item" (click)="selectStateValue('MEGHALAYA')">MEGHALAYA</li>
+                                <li class="dropdown-item" (click)="selectStateValue('MIZORAM')">MIZORAM</li>
+                                <li class="dropdown-item" (click)="selectStateValue('NAGALAND')">NAGALAND</li>
+                                <li class="dropdown-item" (click)="selectStateValue('ODISHA')">ODISHA</li>
+                                <li class="dropdown-item" (click)="selectStateValue('PUDUCHERRY')">PUDUCHERRY</li>
+                                <li class="dropdown-item" (click)="selectStateValue('PUNJAB')">PUNJAB</li>
+                                <li class="dropdown-item" (click)="selectStateValue('RAJASTHAN')">RAJASTHAN</li>
+                            <li class="dropdown-item" (click)="selectStateValue('SIKKIM')">SIKKIM</li>
+                            <li class="dropdown-item" (click)="selectStateValue('TAMIL NADU')">TAMIL NADU</li>
+                            <li class="dropdown-item" (click)="selectStateValue('TELANGANA')">TELANGANA</li>
+                            <li class="dropdown-item" (click)="selectStateValue('TRIPURA')">TRIPURA</li>
+                            <li class="dropdown-item" (click)="selectStateValue('UTTAR PRADESH')">UTTAR PRADESH</li>
+                            <li class="dropdown-item" (click)="selectStateValue('UTTARANCHAL')">UTTARAKHAND</li>
+                            <li class="dropdown-item" (click)="selectStateValue('WEST BENGAL')">WEST BENGAL</li>
+                              </ul>
+                            </div>
+
+
+
+
+                          </div>
+                        </ul>
+
+
+
+                      </div>
+                    </div>
+             
+                </li>
+                <li><span class="vertical-line">
+                  <div class="btn-group" style="padding: 12px;">
+                      <button class="btn  btn-sm dropdown-toggle link-dark-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      {{selectedSchemeValue}}
+                      </button>
+                      <ul class="dropdown-menu">
+                      
+                          <li class="dropdown-item"  (click)="selectSchemeValue('LHDCP')"> LHDCP</li>
+                          <li class="dropdown-item" (click)="selectSchemeValue('RGM')">RGM</li>
+                          <li class="dropdown-item" (click)="selectSchemeValue('NLM')">NLM</li>
+                          <li class="dropdown-item" (click)="selectSchemeValue('AHIDF')">AHIDF</li>
+                          <li class="dropdown-item" (click)="selectSchemeValue('NPDD')">NPDD</li>
+                          <li class="dropdown-item" (click)="selectSchemeValue('SDCFPO')">SDCFPO</li>
+                          <li class="dropdown-item" (click)="selectSchemeValue('DIDF')">DIDF</li>
+                      </ul>
+                    </div>
+
+               </span>
+                </li>
+                <!-- <li><span class="vertical-line">
+                  <div class="btn-group" style="padding: 12px;">
+                      <button class="btn  btn-sm dropdown-toggle link-dark-color" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       YEARS
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">2022</a></li>
+                         
+                      </ul>
+                    </div> 
+               </span>
+                </li> -->
+         
+            </ul>
+    
+           
+            <div class="dropdown text-end">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" style="
+              margin-right: 43px;
+          " aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li> <a class="dropdown-item" routerLink="/logout">Logout</a></li>
+              </ul>
+            </div>
+            
+          </div>
+         
+      </header>
+      
+    </main>
